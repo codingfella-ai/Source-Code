@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 30vh;
+        }
+        footer{
+            min-height: 50vh;
+            background-color: #111010;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: white;
+            gap: 20px;
+            padding-top: 140px;
+            
+        }
+        a{
+            color: #cad5e2;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a,li{
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        p{
+            color: #cad5e2;
+            line-height: 32px;
+            
+        }
+        .info{
+            min-height: 240px;
+            margin: 0px 15px;
+        }
+        .info1{
+            max-width: 330px;
+            text-align: justify;            
+        }
+        input{
+            width: 300px;
+            padding: 10px;
+            height: 25px;
+            color: #222121;
+            outline: none;
+            font-size: 15px;
+        }
+        .btn{
+            border-radius: 3px;
+            width: 325px;
+            padding: 10px;
+            height: 44px;
+            display: block;
+            margin-top: 15px;
+            outline: none;
+            border: none;
+            background-color: #1284e0;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .btn:hover{
+            background-color: #1893f7;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        @media (max-width: 750px) {
+            footer{
+                min-height: 60vh;
+                display: flex;
+                align-content: space-around;
+                flex-direction: column;
+            }
+            .info{
+                flex-wrap: wrap;
+                white-space: wrap;
+            }
+            .info1{
+                min-height: 200px;
+            } 
+        }
+        @media (max-width:400px) {
+            footer{
+                align-content: start;
+            }
+            .info{
+                width: 280px;
+                
+            }
+            input{
+                width: 220px;
+            }
+            .btn{
+                width: 245px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <footer>
+        <div class="info info1">
+            <h2>One Card</h2>
+            <p>India's best metal credit card. Built with full- stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+        </div>
+        <div class="info info2">
+            <h2>Navigation</h2>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+                <li>
+                    <a href="#">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="info info3">
+            <h2>Support</h2>
+            <ul>
+                <li>
+                    <a href="#">F.A.Q</a>
+                </li>
+                <li>
+                    <a href="#">Cookies Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms Of Service</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="info info4">
+            <h2>Newsletter</h2>
+            <input type="email" name="email" id="useremail" placeholder="Your email id here">
+            <button class="btn">Subscribe</button>
+        </div>
+    </footer>
+</body>
+</html>
